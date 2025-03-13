@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.logo {
+    width: 1px;
+    height: 6px;
+}
+nav {
+    background-color: #444444;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    
+    }
+    nav h2 {
+        color: #ffffff;
+        font-size: 1.3em;
+        position: fixed;
+        left: 350px;
+    }
+nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+   nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.hero-section {
+  position: relative; /* Needed for absolute positioning of content */
+  z-index: 1;
+  width: 100%;
+  height: 1000px; /* Adjust as needed */
+  background-image: url('Home\ back-image.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  color: white; /* Set text color to white (or your desired color) */
+  text-align: center; /* Center the text horizontally */
+  padding-top: 200px;
+}
+
+.hero-content {
+  position: absolute; /* Position content over the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  width: 80%; /* Adjust as needed */
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em; /* Adjust as needed */
+  margin-bottom: 15px;
+  color: beige;
+}
+
+.hero-content p {
+  font-size: 1.2em; /* Adjust as needed */
+  color: lightslategray;
+}
+.social-icons {
+    position: fixed; /* Fix the icons to the viewport */
+    top: 70%; /* Position vertically in the middle */
+    left: 20px; /* Position 20px from the right */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex; /* Use flexbox for easy icon layout */
+    flex-direction: column; /* Stack icons vertically */
+    z-index: 1000; /* Ensure icons are on top of other content */
+  }
+  
+  .social-icons a {
+    margin: 5px 0; /* Add spacing between icons */
+    color: #333; /* Icon color */
+    font-size: 24px; /* Icon size */
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Icon color on hover */
+  }
+  #heading{
+    text-align: left;
+    color: beige;
+    position: fixed;
+    left: 50px;
+    bottom: 290px;
+  }
+  #para {
+    display: block;
+    width: 50%;
+    position: fixed;
+    bottom : 160px
+
+  }
+  #team-heading {
+    text-align: left;
+    color: beige;
+    position: absolute;
+    left: 200px;
+    bottom: 350px;
+    font-size: 3em;
+  }
+  #body {
+    min-height: 1000px;
+    min-width: 100%;
+  }
+
+  
+  .meet-our-team-heading {
+    font-size: 3em;
+    margin-top: 30px; /* More top margin */
+    margin-bottom: 30px; /* More bottom margin */
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 200px;
+
+  }
+  
+  #team-section {
+    margin-top: 320px;
+    
+}
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 50px; /* Adjust as needed to prevent overlap */
+}
+.team-member {
+    display: block; /* Ensures block display */
+    text-align: center;
+    margin: 20px;
+    padding: 20px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #252323;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#c-heading {
+    text-align: left;
+    color: beige;
+    position: absolute;
+    left: 50px;
+    bottom: 250px;
+    font-size: 5em;
+  }
+  #u-heading {
+    text-align: left;
+    color: blue;
+    position: absolute;
+    left: 65px;
+    bottom: 170px;
+    font-size: 1em;
+  }
+  form {
+    position: absolute; /* Fixes the form to the viewport */
+    right: 20px; /* Positions the form 20px from the right */
+    top: 35%; /* Centers the form vertically */
+    transform: translateY(-50%); /* Adjusts for vertical centering */
+    padding: 20px; /* Adds padding inside the form */
+    background-color: transparent; /* Adds a background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for better visibility */
+    border-radius: 10px; 
+    font-size: 1em;/* Adds rounded corners */
+}
+form input {
+    display: block; /* Displays the input fields as block elements */
+    width: 100%; /* Sets the input width to 100% of the form */
+    margin: 10px 0; /* Adds spacing between input fields */
+    padding: 10px; /* Adds padding inside the input fields */
+    border: 2px solid gray; /* Adds a border around the input fields */
+    border-radius: 5px; /* Adds rounded corners to the input fields */
+    background-color: transparent;
+
+}
+form textarea {
+    display: block; /* Displays the textarea as a block element */
+    width: 600px; /* Sets the textarea width to 100% of the form */
+    margin: 10px 0; /* Adds spacing between the textarea and other elements */
+    padding: 10px; /* Adds padding inside the textarea */
+    border: 2px solid gray; /* Adds a border around the textarea */
+    border-radius: 5px; /* Adds rounded corners to the textarea */
+    background-color: transparent;
+}
+#submit-box {
+  background-color: #0E98BA;
+  font-size: 1em;
+  cursor: pointer;
+  color: wheat;
+}
+
+#search-results { 
+  text-align: right;
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  
+}
+#searchInput {
+  height: 30px;
+  width: 250px  ;
+  padding: 15px;
+  background-color: #F0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#reset-button {
+  background-color: #F0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 80px;
+  color: gray;
+}
+#search-button {
+  background-color: #F0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 80px;
+  color: gray;
+}
